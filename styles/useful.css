@@ -1,0 +1,326 @@
+.useful_header .pages_navigation p {
+  color: #000;
+  font-weight: 400;
+}
+.useful_header .pages_navigation a:nth-child(2) p {
+  color: #999;
+}
+.useful_header .block_title {
+  margin-bottom: 50px;
+}
+
+.useful_block_card {
+  padding: 40px 0 45px;
+  border-bottom: 1px solid #747474;
+  max-width: 1100px;
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+.useful_block_card_img img {
+  width: 353px;
+  height: 205px;
+}
+
+.useful_block_card_title h2 {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.8px;
+  margin-bottom: 15px;
+}
+
+.useful_block_card_time p {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.08px;
+  margin-bottom: 15px;
+}
+
+.useful_block_card_text p {
+  margin-bottom: 15px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.08px;
+}
+
+.useful_block_card_description {
+  max-width: 600px;
+}
+.useful_block_card_description button {
+  width: 333px;
+  height: 54px;
+  border-radius: 10px;
+  background: #8ab2b5;
+  border: none;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.2px;
+}
+
+.show_more_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.show_more_btn button {
+  width: 333px;
+  height: 54px;
+  border-radius: 10px;
+  background: #8ab2b5;
+  border: none;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.2px;
+}
+.useful_blocks .useful_block_card:last-child {
+  border-bottom: 1px solid transparent !important;
+}
+
+.video_block {
+  margin-top: 120px !important;
+}
+
+.video_block .block_title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.video_card {
+  width: 401px;
+  height: 397px;
+  border-radius: 20px;
+  background: #8ab2b5;
+  overflow: hidden;
+}
+
+.video_card_img {
+  height: 257px;
+  width: 100%;
+  position: relative;
+}
+.video_card_img img {
+  width: 100%;
+}
+
+.video_icon {
+  width: auto !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -18px;
+  margin-left: -22px;
+  cursor: pointer;
+}
+
+.video_card_description {
+  padding: 22px 40px;
+}
+.video_card_description p {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  margin-bottom: 10px;
+}
+.video_card_description span {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.84px;
+}
+
+.video_block {
+  padding-bottom: 120px;
+}
+.video_platform {
+  background: rgba(138, 178, 181, 0.3);
+  padding: 80px 0;
+}
+
+.video_platform_wrapper .block_title {
+  margin-bottom: 70px;
+}
+
+.video_platform_card {
+  width: 49%;
+  height: 304px;
+  padding: 80px 0 20px 40px;
+  margin-bottom: 30px;
+  margin-bottom: 60px;
+}
+
+.video_platform_card_description {
+  width: 300px;
+}
+
+.video_platform_card_description h3 {
+  color: #fff;
+  font-family: "Montserrat Alternates";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.08px;
+  margin-bottom: 13px;
+}
+
+.video_platform_card_description p {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.84px;
+  margin-bottom: 40px;
+}
+.video_platform_card_description img {
+  width: 33px;
+}
+
+.video_platform_card:nth-child(1) {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../assets/images/video-platform-1.jfif), lightgray 50% / cover no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.video_platform_card:nth-child(2) {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../assets/images/video-platform-2.jfif), lightgray 50% / cover no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video_platform_card:nth-child(3) {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../assets/images/video-platform-2.jfif), lightgray 50% / cover no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.video_platform_card:nth-child(4) {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../assets/images/video-platform-1.jfif), lightgray 50% / cover no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video_platform_cards {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.materials_block {
+  padding-top: 170px;
+}
+.materials_block_wrapper {
+  border-radius: 200px;
+  background: #ece5d5;
+  padding: 80px;
+  position: relative;
+}
+
+.materials_block .block_title {
+  margin-bottom: 30px;
+}
+.materials_title_secondary h3 {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.8px;
+}
+
+.materials_block_item p {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  margin-bottom: 12px;
+  max-width: 510px;
+  display: flex;
+}
+
+.materials_block_item a {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.96px;
+  width: 500px;
+  display: flex;
+  padding-left: 20px;
+}
+
+.materials_block_item {
+  padding: 30px 0;
+  border-bottom: 1px solid #8ab2b5;
+  max-width: 810px;
+}
+.materials_block_item:last-child {
+    border-bottom: transparent;
+}
+.materials_block {
+    padding-bottom: 120px;
+}
