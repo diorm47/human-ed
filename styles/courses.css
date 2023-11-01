@@ -1,0 +1,189 @@
+.courses_header .pages_navigation p {
+  color: #999;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.96px;
+}
+
+.courses_page_cards {
+  padding-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 120px !important;
+}
+
+.course_page_card {
+  overflow: hidden;
+  height: 455px;
+  width: 49%;
+  border-radius: 20px;
+  background: rgba(138, 178, 181, 0.3);
+}
+
+.course_page_card_header {
+  height: 209px;
+  padding: 35px 30px;
+}
+.course_page_card:nth-child(1) .course_page_card_header {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../assets/images/course-card-1.jfif), lightgray 50% / cover no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.course_page_card:nth-child(2) .course_page_card_header {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../assets/images/course-card-2.jfif), lightgray 50% / cover no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.course_page_card:nth-child(3) .course_page_card_header {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../assets/images/course-card-3.jfif), lightgray 50% / cover no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.course_page_card:nth-child(4) .course_page_card_header {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../assets/images/course-card-4.jfif), lightgray 50% / cover no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.course_page_card_header p:first-child {
+  color: #fff;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.84px;
+}
+
+.course_page_card_header h3 {
+  color: #fff;
+  font-family: "Montserrat Alternates";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.32px;
+  margin-bottom: 18px;
+}
+
+.course_page_card_header h4 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.96px;
+}
+
+.course_page_card_header h3,
+.course_page_card_header h4 {
+  width: 73%;
+}
+
+.course_page_card_descr {
+  padding: 25px;
+}
+
+.course_page_card_descr_main {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.course_page_card_descr_main p {
+  color: #000;
+
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.08px;
+  margin-bottom: 2px;
+}
+.course_page_card_descr_main span {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.84px;
+}
+.course_page_card_descr_main div {
+  width: 33%;
+}
+.desc_line {
+  width: 1px !important;
+  height: 49px;
+  background: #bfbfbf;
+  margin: 0 33px;
+}
+.course_page_card_descr_secondary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.course_page_card_descr_secondary p {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.course_page_card_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.course_page_card_btn button {
+  width: 255px;
+  height: 48px;
+  border-radius: 10px;
+  background: #8ab2b5;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat Alternates";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.08px;
+}
