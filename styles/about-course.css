@@ -596,6 +596,10 @@
 .course_price_card_secondary .course_price_card_title {
   width: 330px;
 }
+.course_price_card_secondary
+.real_price {
+  width: 100%;
+}
 
 .course_price_card_secondary button {
   width: 300px;

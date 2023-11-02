@@ -87,7 +87,7 @@
     <div class="lectors_block main_wrapper">
       <h2 class="block_title">Лектори</h2>
       <div class="lectors_carts_wrapper">
-        <div class="lector_card">
+        <div class="lector_card" onclick="setLectorModal()">
           <img src="./assets/images/lector-1.png" alt="" />
           <p>Ігор Кожемяко</p>
           <span
@@ -95,7 +95,7 @@
             lorem quam massa. Sit commodo amet sit tortor.</span
           >
         </div>
-        <div class="lector_card">
+        <div class="lector_card" onclick="setLectorModal()">
           <img src="./assets/images/lector-1.png" alt="" />
           <p>Ігор Кожемяко</p>
           <span
@@ -103,7 +103,7 @@
             lorem quam massa. Sit commodo amet sit tortor.</span
           >
         </div>
-        <div class="lector_card">
+        <div class="lector_card" onclick="setLectorModal()">
           <img src="./assets/images/lector-1.png" alt="" />
           <p>Ігор Кожемяко</p>
           <span
@@ -111,7 +111,7 @@
             lorem quam massa. Sit commodo amet sit tortor.</span
           >
         </div>
-        <div class="lector_card">
+        <div class="lector_card" onclick="setLectorModal()">
           <img src="./assets/images/lector-1.png" alt="" />
           <p>Ігор Кожемяко</p>
           <span
@@ -229,5 +229,45 @@
         </div>
       </div>
     </footer>
+    <div class="lector_modal" style="display: none">
+      <div class="lector_modal_wrapper">
+        <div class="lecor_modal_img">
+          <img src="./assets/images/lector-modal.svg" alt="" />
+        </div>
+        <div class="lecor_modal_description">
+          <div class="modal_exit">
+            <img
+              onclick="setLectorModal()"
+              src="./assets/icons/exit-modal.svg"
+              alt=""
+            />
+          </div>
+          <h3>Олег Волошко</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Ut platea adipiscing metus
+            lorem quam massa. Sit commodo amet sit tortor. Lorem ipsum dolor sit
+            amet consectetur. Ut platea adipiscing metus lorem quam massa. Sit
+            commodo amet sit tortor.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Ut platea adipiscing metus
+            lorem quam massa. Sit commodo amet sit tortor.Lorem ipsum dolor sit
+            amet consectetur. Ut platea adipiscing metus lorem quam massa. Sit
+            commodo amet sit tortor.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      const setLectorModal = () => {
+        const lector_modal = document.querySelector(".lector_modal");
+
+        if (lector_modal.style.display == "none") {
+          lector_modal.style.display = "flex";
+        } else {
+          lector_modal.style.display = "none";
+        }
+      };
+    </script>
   </body>
 </html>

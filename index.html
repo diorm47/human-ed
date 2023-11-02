@@ -556,7 +556,7 @@
         <div class="contact_form_item">
           <textarea placeholder="Введіть текст"></textarea>
         </div>
-        <button class="submit_btn">Надіслати</button>
+        <button class="submit_btn" onclick="setMailModal()">Надіслати</button>
       </div>
     </div>
     <div class="faq_block">
@@ -709,7 +709,6 @@
               <p>loremipsim@gmail.com</p>
             </a>
           </div>
-     
         </div>
         <div class="footer_policy">
           <a href="#"><p>Політика конфіденційності</p></a>
@@ -718,6 +717,50 @@
         </div>
       </div>
     </footer>
+    <div class="success_mail" style="display: none">
+      <div class="success_mail_wrapper">
+        <div class="modal_exit">
+          <img
+            onclick="setMailModal()"
+            src="./assets/icons/exit-modal.svg"
+            alt=""
+          />
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="80"
+          height="42"
+          viewBox="0 0 80 42"
+          fill="none"
+        >
+          <path
+            d="M21.25 21L23.5938 23.3438M77.5 2.25L40 39.75L37.6562 37.4062M2.5 21L21.25 39.75L58.75 2.25"
+            stroke="#8AB2B5"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <p>Дякуємо, вашу заявку прийнято!</p>
+        <span
+          >Найближчим часом ми зв’яжемось <br />
+          з вами для уточнення деталей</span
+        >
+        <svg
+          width="574"
+          height="166"
+          viewBox="0 0 574 166"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.5 165C36 152.833 109.1 120.1 117.5 86.4999C128 44.4999 43 66.9999 99.5 132C156 197 198.5 95 317 101.5C435.5 108 430 110.5 490 86.4999C550 62.5 551 170.5 458.5 86.4999C384.5 19.3 504.667 1.83333 574 1.5"
+            stroke="#8AB2B5"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+    </div>
     <script src="./scripts/scripts.js"></script>
   </body>
 </html>

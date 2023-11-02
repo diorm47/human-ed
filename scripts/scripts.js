@@ -52,8 +52,16 @@ $(document).ready(function () {
   });
 });
 
-
-
 // Tabs
 const { Tablist } = jolty;
 Tablist.initAll();
+
+const setMailModal = () => {
+  const success_mail = document.querySelector(".success_mail");
+
+  if (success_mail.style.display == "none") {
+    success_mail.style.display = "flex";
+  } else {
+    success_mail.style.display = "none";
+  }
+};

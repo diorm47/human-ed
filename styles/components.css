@@ -1,0 +1,116 @@
+.success_mail,
+.lector_modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00000052;
+}
+
+.success_mail_wrapper {
+  width: 579px;
+  height: 469px;
+  border-radius: 20px;
+  background: #ece5d5;
+  box-shadow: 0px 4px 20px 0px rgba(109, 109, 109, 0.25);
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal_exit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 26px;
+  padding-right: 40px;
+}
+.modal_exit img {
+  cursor: pointer;
+}
+.success_mail_wrapper p {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 55px 0 25px;
+}
+
+.success_mail_wrapper span {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.success_mail_wrapper svg:last-child {
+  width: 100%;
+}
+
+.lector_modal_wrapper {
+  width: 926px;
+  height: 590px;
+  border-radius: 20px;
+  background: #ece5d5;
+  box-shadow: 0px 4px 20px 0px rgba(103, 103, 103, 0.25);
+  display: flex;
+  align-items: start;
+  position: relative;
+}
+
+.lecor_modal_img {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.lecor_modal_img img {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+.lecor_modal_description {
+  width: 50%;
+  height: 100%;
+  padding: 60px 70px 0 0;
+}
+
+.lecor_modal_description .modal_exit {
+  padding-right: 0;
+  margin-bottom: 40px;
+}
+
+.lecor_modal_description h3 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.8px;
+  margin-bottom: 35px;
+}
+
+.lecor_modal_description p {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.96px;
+  margin-bottom: 20px;
+}
