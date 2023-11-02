@@ -697,3 +697,270 @@ header {
   border-bottom: 1px solid #c5c5c5;
   padding: 50px;
 }
+.advantage_paths_mob {
+  display: none;
+}
+
+@media only screen and (max-width: 1250px) {
+  .header_wrapper {
+    flex-direction: column;
+    align-items: start;
+  }
+  .header_right {
+    position: static;
+  }
+  header {
+    height: auto;
+  }
+  .header_right {
+    width: 100%;
+    height: auto;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header_right img {
+    transform: rotate(90deg);
+  }
+  .header_right div {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header_left_text {
+    background: linear-gradient(
+      90deg,
+      rgba(138, 178, 181, 0.33) 11.33%,
+      rgba(89, 56, 37, 0) 72.36%
+    );
+    padding-left: 20px;
+  }
+  .header_left_text h1 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 113.023%; /* 33.907px */
+    margin-bottom: 28px;
+  }
+  .header_left_text p {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 300px;
+  }
+  .header_left button {
+    margin-left: 20px;
+    margin-bottom: 85px;
+  }
+  .header_right {
+    gap: 22px;
+    padding-bottom: 70px;
+    padding-top: 40px;
+  }
+  .header_secondary h2 {
+    font-size: 16px;
+  }
+  .oval_img {
+    position: absolute;
+    top: 20px;
+  }
+  .oval_img img {
+    width: 100%;
+    height: auto;
+  }
+  .oval_wrapper {
+    position: relative;
+    padding-top: 300px;
+  }
+  .oval_card {
+    padding: 0;
+  }
+  .oval_block {
+    padding: 80px 0;
+  }
+  .block_title {
+    font-size: 25px;
+    letter-spacing: -1.5px;
+  }
+  .oval_card h3 {
+    line-height: 100%;
+    font-size: 60px;
+  }
+  .oval_card p {
+    font-size: 12px;
+  }
+  .advantages_block .block_title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .advantage_cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .advantages_moto_wrapper p {
+    color: #fff;
+    text-align: center;
+    letter-spacing: normal;
+    /* основний тел */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .advantage_paths_mob {
+    display: block;
+  }
+  .advantage_paths_img {
+    display: none;
+  }
+  .advantages_moto_wrapper {
+    border-radius: 100px 20px;
+  }
+  .advantages_moto {
+    width: 100%;
+
+    height: 174px;
+    border-radius: 20px;
+    background: rgba(138, 178, 181, 0.5);
+    margin-bottom: 80px;
+  }
+  .advantages_moto_wrapper img {
+    width: 180px;
+  }
+  .course_card {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .courses_block {
+    padding: 45px 20px;
+  }
+  .course_descr {
+    width: 100%;
+    padding: 25px;
+    padding-right: 15px;
+  }
+  .course_img {
+    min-height: 320px;
+  }
+  .course_top_btn_wrapper {
+    margin-bottom: 25px;
+  }
+  .show_more {
+    width: 100%;
+    padding: 0;
+    padding: 16px 0;
+    margin-top: 20px;
+
+    color: #fff;
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.08px;
+  }
+  .rewiews_top .block_title {
+    margin-bottom: 0;
+  }
+  .review_card {
+    width: 292px;
+    height: 418px;
+    margin-left: 5px;
+    margin: 0 auto;
+  }
+  .review_card_name_img img {
+    width: 82px;
+    height: 82px;
+  }
+  .review_card_text p {
+    color: #626262;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .review_card_wrapper {
+    width: 317px !important;
+  }
+  .reviews_block_wrapper {
+    padding: 0 !important;
+  }
+  .rewiews_top {
+    padding: 0 20px;
+  }
+  .contact_form {
+    width: 100%;
+    height: auto;
+    padding: 40px 30px;
+  }
+  .contact_block {
+    padding: 80px 20px;
+  }
+  .contact_block .block_title {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.5px;
+    margin-bottom: 30px;
+  }
+  .accordion_tab_item {
+    padding: 25px 0;
+  }
+  .accordion-tab h3 {
+    font-size: 20px;
+  }
+  .accordion-tab p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+  }
+  .accordion-tab div {
+    gap: 7px;
+  }
+  .accordion-tab img {
+    width: 22px;
+  }
+  .accordion-panel p {
+    width: 100%;
+    padding-left: 0;
+    font-size: 16px;
+  }
+  .faq_block {
+    padding: 60px 0;
+  }
+  .faq_block_wrapper .block_title {
+    margin-bottom: 0px;
+  }
+  .sourse_btn {
+    width: 210px;
+    height: 37px;
+    font-size: 18px;
+  }
+  .advantage_card {
+    width: 100%;
+  }
+  .header_secondary h2 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .header_secondary h2 br {
+    display: none;
+  }
+  header {
+    background-position: 70%;
+  }
+}

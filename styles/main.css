@@ -33,6 +33,31 @@ a {
   margin: 0 auto;
 }
 
-.hided {
+.hided,
+.nav_menu_icon {
   display: none;
+}
+
+@media only screen and (max-width: 1280px) {
+  .main_wrapper {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .advantage_cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .advantage_paths img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .nav_menu_icon {
+    display: flex;
+    padding: 62px 0 0 22px;
+  }
+  .nav_menu_icon img {
+    cursor: pointer;
+  }
 }

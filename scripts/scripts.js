@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(".reviews_carousel").slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     dots: false,
@@ -63,5 +63,15 @@ const setMailModal = () => {
     success_mail.style.display = "flex";
   } else {
     success_mail.style.display = "none";
+  }
+};
+
+const navToggle = () => {
+  const mobile_menu = document.querySelector(".mobile_menu");
+
+  if (mobile_menu.style.display == "none") {
+    mobile_menu.style.display = "block";
+  } else {
+    mobile_menu.style.display = "none";
   }
 };

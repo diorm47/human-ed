@@ -84,3 +84,23 @@ footer {
   font-weight: 400;
   line-height: 150%; /* 24px */
 }
+
+@media only screen and (max-width: 500px) {
+  .footer_wrapper_top,
+  .footer_wrapper_middle {
+    flex-direction: column;
+    align-items: self-start;
+    gap: 30px;
+  }
+  .footer_policy {
+    flex-direction: column;
+    align-items: self-start;
+    gap: 14px;
+  }
+  .footer_menu {
+    gap: 10px;
+  }
+  footer {
+    padding: 45px 0 60px;
+  }
+}
