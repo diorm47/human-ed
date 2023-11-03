@@ -15,7 +15,7 @@
     <div class="mobile_menu" style="display: none">
       <div class="mobile_modal_exit">
         <svg
-         onclick="navToggle()"
+          onclick="navToggle()"
           xmlns="http://www.w3.org/2000/svg"
           width="18"
           height="18"
@@ -90,7 +90,8 @@
                 <clipPath id="clip0_62_3586">
                   <rect width="24" height="24" fill="white" />
                 </clipPath>
-              </defs></svg></a>
+              </defs></svg
+          ></a>
           <a href="#"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +103,8 @@
               <path
                 d="M23.7609 7.1998C23.7609 7.1998 23.5266 5.54512 22.8047 4.81855C21.8906 3.8623 20.8688 3.85762 20.4 3.80137C17.0438 3.55762 12.0047 3.55762 12.0047 3.55762H11.9953C11.9953 3.55762 6.95625 3.55762 3.6 3.80137C3.13125 3.85762 2.10938 3.8623 1.19531 4.81855C0.473438 5.54512 0.24375 7.1998 0.24375 7.1998C0.24375 7.1998 0 9.14512 0 11.0857V12.9045C0 14.8451 0.239062 16.7904 0.239062 16.7904C0.239062 16.7904 0.473437 18.4451 1.19062 19.1717C2.10469 20.1279 3.30469 20.0951 3.83906 20.1982C5.76094 20.3811 12 20.4373 12 20.4373C12 20.4373 17.0438 20.4279 20.4 20.1889C20.8688 20.1326 21.8906 20.1279 22.8047 19.1717C23.5266 18.4451 23.7609 16.7904 23.7609 16.7904C23.7609 16.7904 24 14.8498 24 12.9045V11.0857C24 9.14512 23.7609 7.1998 23.7609 7.1998ZM9.52031 15.1123V8.36699L16.0031 11.7514L9.52031 15.1123Z"
                 fill="#8AB2B5"
-              /></svg></a>
+              /></svg
+          ></a>
           <a href="#"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -123,7 +125,8 @@
                 <clipPath id="clip0_62_3584">
                   <rect width="24" height="24" fill="white" />
                 </clipPath>
-              </defs></svg></a>
+              </defs></svg
+          ></a>
         </div>
       </div>
       <div class="footer_contacts">
@@ -193,16 +196,14 @@
       </div>
     </div>
     <div class="about_course_togglers_wrapper">
-
-    
-    <div class="about_course_togglers">
-      <button>Для кого</button>
-      <button>Автор</button>
-      <button>Що чекає на курсі</button>
-      <button>Структура</button>
-      <button>Q&A</button>
+      <div class="about_course_togglers">
+        <button>Для кого</button>
+        <button>Автор</button>
+        <button>Що чекає на курсі</button>
+        <button>Структура</button>
+        <button>Q&A</button>
+      </div>
     </div>
-  </div>
     <div class="about_video main_wrapper">
       <h3>Ознайомся з курсом детальніше, переглянувши відео</h3>
       <div class="about_video_block">
@@ -213,26 +214,24 @@
       <h2 class="block_title">Це навчання для тебе, якщо ти</h2>
       <div class="training_block_items_firstly">
         <div class="training_block_items_wrapper">
-
-       
-        <div class="training_block_items">
-          <div class="training_block_item training_block_item_first">
-            <p>Незадоволений життям </p>
-          </div>
-          <div class="training_block_item training_block_item_second">
-            <p>  Відносинами в сім’ї </p>
-          </div>
-          <div class="training_block_item training_block_item_img">
-            <img src="./assets/images/training-img.png" alt="" />
-          </div>
-          <div class="training_block_item training_block_item_first">
-            <p>Своїми стосунками  </p>
-          </div>
-          <div class="training_block_item training_block_item_second">
-            <p> Реалізацією себе </p>
+          <div class="training_block_items">
+            <div class="training_block_item training_block_item_first">
+              <p>Незадоволений життям </p>
+            </div>
+            <div class="training_block_item training_block_item_second">
+              <p>  Відносинами в сім’ї </p>
+            </div>
+            <div class="training_block_item training_block_item_img">
+              <img src="./assets/images/training-img.png" alt="" />
+            </div>
+            <div class="training_block_item training_block_item_first">
+              <p>Своїми стосунками  </p>
+            </div>
+            <div class="training_block_item training_block_item_second">
+              <p> Реалізацією себе </p>
+            </div>
           </div>
         </div>
-      </div>
         <div class="training_line"></div>
         <div class="training_block_items_firstly_text">
           <h3>Зміни вже близько</h3>
@@ -758,7 +757,7 @@
         <div class="contact_form_item">
           <textarea placeholder="Введіть текст"></textarea>
         </div>
-        <button class="submit_btn"   onclick="setMailModal()">Надіслати</button>
+        <button class="submit_btn" onclick="setMailModal()">Надіслати</button>
       </div>
     </div>
     <div class="faq_block">
@@ -963,6 +962,14 @@
         </svg>
       </div>
     </div>
+    <script>
+      let navItems = document.querySelectorAll(".nav_menu a");
+      for (let i = 0; i < navItems.length; i++) {
+        if (navItems[i].href == window.location.href) {
+          navItems[i].className = "active_nav_menu";
+        }
+      }
+    </script>
     <script src="./scripts/scripts.js"></script>
   </body>
 </html>

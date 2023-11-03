@@ -13,6 +13,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  -webkit-font-smoothing: antialiased;
+}
 p {
   font-family: "Montserrat", sans-serif;
 }
@@ -36,6 +39,22 @@ a {
 .hided,
 .nav_menu_icon {
   display: none;
+}
+.active_nav_menu {
+  text-decoration: underline;
+  color: #593825;
+}
+
+.about_course_togglers_wrapper::-webkit-scrollbar,
+.training_block_items_wrapper::-webkit-scrollbar,
+.lectors_carts::-webkit-scrollbar {
+  display: none; /* Скрывает ползунок в Chrome и Safari */
+}
+
+.about_course_togglers_wrapper,
+.training_block_items_wrapper,
+.lectors_carts {
+  scrollbar-width: none; /* Скрывает ползунок в Firefox */
 }
 
 @media only screen and (max-width: 1280px) {

@@ -402,6 +402,14 @@
       </div>
     </div>
     <script>
+      let navItems = document.querySelectorAll(".nav_menu a");
+      for (let i = 0; i < navItems.length; i++) {
+        if (navItems[i].href == window.location.href) {
+          navItems[i].className = "active_nav_menu";
+        }
+      }
+    </script>
+    <script>
       const setLectorModal = () => {
         const lector_modal = document.querySelector(".lector_modal");
 
