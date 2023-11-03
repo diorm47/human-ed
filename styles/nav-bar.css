@@ -52,6 +52,10 @@
   text-transform: uppercase;
 }
 
+.nav_menu p:hover {
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 1050px) {
   nav {
     display: none;

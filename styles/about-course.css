@@ -584,6 +584,14 @@
   letter-spacing: -1.8px;
 }
 
+.about_course_togglers button {
+  transition: all 0.4s ease;
+}
+.about_course_togglers button:hover {
+  transition: all 0.4s ease;
+  background: #8AB2B5;
+  color: #FFF;
+}
 .course_price_card_secondary p {
   color: #8ab2b5;
   font-family: Montserrat;
