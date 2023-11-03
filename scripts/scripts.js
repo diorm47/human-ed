@@ -27,7 +27,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".video_block_cards").slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     dots: false,

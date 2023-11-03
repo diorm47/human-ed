@@ -252,7 +252,7 @@
   }
   .second_block_card_p_wrapper svg {
     width: 33px;
-    height:  33px;
+    height: 33px;
     margin-bottom: 10px;
   }
   .second_block_card_p_wrapper p {
@@ -268,10 +268,98 @@
   }
   .second_block_card_p_wrapper span {
     color: #000;
-font-family: Montserrat;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .lector_card {
+    width: 226.912px;
+    height: 267px;
+    margin-right: 7px;
+    padding: 20px 25px;
+  }
+  .lector_card img {
+    width: 102.867px;
+    height: 102.867px;
+    margin-bottom: 20px;
+  }
+  .lectors_carts {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: visible;
+  }
+  .lector_card p {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.96px;
+    text-align: center;
+    margin-bottom: 13px;
+  }
+  .lector_card span {
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.72px;
+  }
+  .lectors_carts_wrapper {
+    width: 940px;
+    padding-left: 20px;
+  }
+  .lectors_block {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .lectors_block .block_title {
+    padding-left: 20px;
+  }
+  .result_block_wrapper {
+    padding: 0;
+  }
+  .result_block {
+    height: 423px;
+  }
+  .result_text {
+    width: 100%;
+    padding-top: 60px;
+    padding-left: 20px;
+  }
+  .result_text p {
+    color: #fff;
+
+    /* заголовок тел */
+    font-family: "Montserrat Alternates";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.5px;
+    margin-bottom: 20px;
+  }
+  .result_text span {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .result_block svg {
+    position: absolute;
+    right: -20%;
+    top: auto;
+    bottom: 0 !important;
+    width: 242px;
+    height: 227px;
   }
 }
