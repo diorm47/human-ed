@@ -727,6 +727,30 @@ header {
     padding: 0;
   }
 }
+@media only screen and (max-width: 1160px) {
+  .header_right {
+    margin-top: 200px;
+  }
+  .oval_img img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .course_card  {
+    width: 100%;
+  }
+  .courses_cards {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media only screen and (max-width: 850px) { 
+  .advantage_card {
+    width: 97%;
+  }
+}
 
 @media only screen and (max-width: 500px) {
   .header_left_text {

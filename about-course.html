@@ -197,17 +197,29 @@
     </div>
     <div class="about_course_togglers_wrapper">
       <div class="about_course_togglers">
-        <button>Для кого</button>
-        <button>Автор</button>
-        <button>Що чекає на курсі</button>
-        <button>Структура</button>
-        <button>Q&A</button>
+        <button onclick="scrollToElement('.training_block')">Для кого</button>
+        <button onclick="scrollToElement('.about_course_autor')">Автор</button>
+        <button onclick="scrollToElement('.course_advantages')">
+          Що чекає на курсі
+        </button>
+        <button onclick="scrollToElement('.course_structure')">
+          Структура
+        </button>
+        <button onclick="scrollToElement('.faq_block')">Q&A</button>
       </div>
     </div>
     <div class="about_video main_wrapper">
       <h3>Ознайомся з курсом детальніше, переглянувши відео</h3>
       <div class="about_video_block">
-        <img src="./assets/icons/video-icon.svg" alt="" />
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/2cXbSra6hAk?si=WRBygSzaMNIuQoj4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
     <div class="training_block main_wrapper">
@@ -385,7 +397,7 @@
           commodo ut tellus aliquet egestas. Consequat ut ut purus dignissim id
           vitae.
         </p>
-        <button>Про автора</button>
+        <button onclick="setLectorModal()">Про автора</button>
       </div>
     </div>
     <div class="course_advantages">
@@ -962,11 +974,60 @@
         </svg>
       </div>
     </div>
+    <div class="lector_modal" style="display: none">
+      <div class="lector_modal_wrapper">
+        <div class="lecor_modal_img">
+          <img src="./assets/images/lector-modal.svg" alt="" />
+        </div>
+        <div class="lecor_modal_description">
+          <div class="modal_exit">
+            <img
+              onclick="setLectorModal()"
+              src="./assets/icons/exit-modal.svg"
+              alt=""
+            />
+          </div>
+          <h3>Олег Волошко</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Ut platea adipiscing metus
+            lorem quam massa. Sit commodo amet sit tortor. Lorem ipsum dolor sit
+            amet consectetur. Ut platea adipiscing metus lorem quam massa. Sit
+            commodo amet sit tortor.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Ut platea adipiscing metus
+            lorem quam massa. Sit commodo amet sit tortor.Lorem ipsum dolor sit
+            amet consectetur. Ut platea adipiscing metus lorem quam massa. Sit
+            commodo amet sit tortor.
+          </p>
+        </div>
+      </div>
+    </div>
     <script>
       let navItems = document.querySelectorAll(".nav_menu a");
       for (let i = 0; i < navItems.length; i++) {
         if (navItems[i].href == window.location.href) {
           navItems[i].className = "active_nav_menu";
+        }
+      }
+      const setLectorModal = () => {
+        const lector_modal = document.querySelector(".lector_modal");
+
+        if (lector_modal.style.display == "none") {
+          lector_modal.style.display = "flex";
+        } else {
+          lector_modal.style.display = "none";
+        }
+      };
+    </script>
+    <script>
+      function scrollToElement(selector) {
+        const targetElement = document.querySelector(selector);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: "smooth",
+          });
         }
       }
     </script>

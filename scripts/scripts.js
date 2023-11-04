@@ -14,11 +14,11 @@ $(document).ready(function () {
       {
         breakpoint: 1110,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
       {
-        breakpoint: 500,
+        breakpoint: 840,
         settings: {
           slidesToShow: 1,
         },
