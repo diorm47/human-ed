@@ -652,12 +652,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all 0.4s ease;
 }
 
 .accordion-tab div {
   display: flex;
   align-items: center;
   gap: 22px;
+  transition: all 0.4s ease;
 }
 .accordion-tab h3 {
   color: var(--main_black, #3e3d3d);
@@ -688,14 +690,33 @@ header {
   line-height: normal;
   text-transform: capitalize;
   width: 800px;
+  transition: all 0.4s ease;
 }
-
+.ui-active p {
+  transition: all 0.4s ease;
+}
+.accordion_panel {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.accordion_tab_item img {
+  transition: all 0.4s ease;
+}
 .ui-active img {
   transform: rotate(180deg);
+  transition: all 0.4s ease;
+}
+.ui-active
+.accordion_panel {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.4s ease;
 }
 .accordion_tab_item {
   border-bottom: 1px solid #c5c5c5;
   padding: 50px;
+  transition: all 0.4s ease;
 }
 .advantage_paths_mob {
   display: none;
@@ -738,7 +759,7 @@ header {
 }
 
 @media only screen and (max-width: 980px) {
-  .course_card  {
+  .course_card {
     width: 100%;
   }
   .courses_cards {
@@ -746,7 +767,7 @@ header {
     padding-right: 20px;
   }
 }
-@media only screen and (max-width: 850px) { 
+@media only screen and (max-width: 850px) {
   .advantage_card {
     width: 97%;
   }

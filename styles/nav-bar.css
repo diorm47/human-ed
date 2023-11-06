@@ -1,3 +1,15 @@
+nav {
+  position: relative;
+  height: 106px;
+}
+.nav {
+  width: 100%;
+ 
+  background: #fff;
+  position: fixed;
+  z-index: 1111;
+}
+
 .nav_wrapper {
   display: flex;
   align-items: center;

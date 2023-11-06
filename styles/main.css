@@ -61,6 +61,21 @@ button:hover {
   transition: all 0.4s ease;
   opacity: 0.7;
 }
+.top_btn {
+  position: absolute;
+  right: 20px;
+  /* top: 20px; */
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+footer {
+  position: relative;
+}
+@media only screen and (max-width: 1390px) {
+  .top_btn {
+    top: 20px;
+  }
+}
 
 @media only screen and (max-width: 1280px) {
   .main_wrapper {
@@ -83,5 +98,11 @@ button:hover {
   }
   .nav_menu_icon img {
     cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .top_btn {
+    top: 45px;
   }
 }
