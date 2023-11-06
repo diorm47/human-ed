@@ -869,15 +869,46 @@
         </div>
       </div>
     </div>
-    <footer>
-      <div class="top_btn" onclick="scrollToTop()">
-        <img src="./assets/icons/arrow-dow-white.svg" alt="" />
-        <script>
-          function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: "smooth" });
+    <div class="top_btn" onclick="scrollToTop()">
+      <img src="./assets/icons/arrow-dow-white.svg" alt="" />
+      <script>
+        function scrollToTop() {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+        var mybutton = document.querySelector(".top_btn");
+        function toggleButton() {
+          if (
+            document.body.scrollTop > window.innerHeight ||
+            document.documentElement.scrollTop > window.innerHeight
+          ) {
+            // Показываем кнопку если ширина экрана меньше 1050 пикселей
+            if (window.innerWidth < 1050) {
+              mybutton.style.display = "flex";
+            } else {
+              mybutton.style.display = "none";
+            }
+          } else {
+            mybutton.style.display = "none";
           }
-        </script>
-      </div>
+        }
+
+        // Обработчик прокрутки
+        window.onscroll = function () {
+          toggleButton();
+        };
+
+        // Обработчик изменения размера окна
+        window.onresize = function () {
+          toggleButton();
+        };
+
+        // При загрузке страницы
+        window.onload = function () {
+          toggleButton();
+        };
+      </script>
+    </div>
+    <footer>
       <div class="footer_wrapper main_wrapper">
         <div class="footer_wrapper_top">
           <div class="footer_logo">
