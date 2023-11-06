@@ -85,7 +85,7 @@ footer {
   line-height: 150%; /* 24px */
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 660px) {
   .footer_wrapper_top,
   .footer_wrapper_middle {
     flex-direction: column;

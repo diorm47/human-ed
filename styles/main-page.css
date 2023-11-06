@@ -773,7 +773,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 560px) {
   .header_left_text {
     background: linear-gradient(
       90deg,
@@ -926,6 +926,9 @@ header {
   .review_card_name_img img {
     width: 82px;
     height: 82px;
+  }
+  .advantage_card_text br {
+    display: none;
   }
   .review_card_text p {
     color: #626262;
