@@ -283,7 +283,6 @@
       <div class="result_studyng_wrapper main_wrapper">
         <div class="results_img">
           <img src="./assets/images/result.svg" alt="" />
-
         </div>
         <div class="result_tabs">
           <h2 class="block_title">Результат навчання</h2>
@@ -993,6 +992,7 @@
         </div>
       </div>
     </footer>
+      <div class="overlay dn"></div>
     <div class="success_mail hided_modal" onclick="setMailModal()">
       <div class="success_mail_wrapper">
         <div class="modal_exit">
@@ -1037,6 +1037,7 @@
         </svg>
       </div>
     </div>
+      <div class="overlay dn"></div>
     <div class="lector_modal hided_modal" onclick="setLectorModal()">
       <div class="lector_modal_wrapper">
         <div class="lecor_modal_img">
@@ -1081,11 +1082,14 @@
       }
       const setLectorModal = (event) => {
         const lector_modal = document.querySelector(".lector_modal");
-
+        const overlay = document.querySelector(".overlay");
+        overlay.classList.toggle("dn");
         lector_modal.classList.toggle("hided_modal");
-        document.querySelector('.lector_modal_wrapper').addEventListener('click', function(event) {
-          event.stopPropagation();
-      });
+        document
+          .querySelector(".lector_modal_wrapper")
+          .addEventListener("click", function (event) {
+            event.stopPropagation();
+          });
       };
     </script>
     <script>

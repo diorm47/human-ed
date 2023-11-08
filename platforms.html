@@ -414,6 +414,7 @@
         </div>
       </div>
     </footer>
+    <div class="overlay dn"></div>
     <div class="lector_modal hided_modal" onclick="setLectorModal()">
       <div class="lector_modal_wrapper">
         <div class="lecor_modal_img">
@@ -460,7 +461,8 @@
     <script>
       const setLectorModal = (event) => {
         const lector_modal = document.querySelector(".lector_modal");
-
+        const overlay = document.querySelector(".overlay");
+        overlay.classList.toggle("dn");
         lector_modal.classList.toggle("hided_modal");
         document
           .querySelector(".lector_modal_wrapper")

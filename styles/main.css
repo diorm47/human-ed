@@ -97,6 +97,9 @@ footer {
   transform: translateY(-100%);
 }
 
+.dn {
+  display: none;
+}
 @media only screen and (max-width: 1280px) {
   .main_wrapper {
     width: 100%;

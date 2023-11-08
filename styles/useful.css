@@ -324,6 +324,12 @@
 .materials_block {
   padding-bottom: 120px;
 }
+@media only screen and (max-width: 1250px) {
+  .video_card {
+    margin: 0 auto;
+  }
+}
+
 
 @media only screen and (max-width: 500px) {
   .useful_block_card {

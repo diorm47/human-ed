@@ -37,13 +37,13 @@ $(document).ready(function () {
     nextArrow: $(".video_right"),
     responsive: [
       {
-        breakpoint: 1110,
+        breakpoint: 1250,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
       {
-        breakpoint: 500,
+        breakpoint: 850,
         settings: {
           slidesToShow: 1,
         },
@@ -59,6 +59,10 @@ Tablist.initAll();
 const setMailModal = (event) => {
   const success_mail = document.querySelector(".success_mail");
   success_mail.classList.toggle("hided_modal");
+
+
+  const overlay = document.querySelector(".overlay");
+  overlay.classList.toggle("dn");
 
   document
     .querySelector(".success_mail_wrapper")
