@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
   $(".reviews_carousel").slick({
     infinite: false,
@@ -58,14 +56,15 @@ $(document).ready(function () {
 const { Tablist } = jolty;
 Tablist.initAll();
 
-const setMailModal = () => {
+const setMailModal = (event) => {
   const success_mail = document.querySelector(".success_mail");
+  success_mail.classList.toggle("hided_modal");
 
-  if (success_mail.style.display == "none") {
-    success_mail.style.display = "flex";
-  } else {
-    success_mail.style.display = "none";
-  }
+  document
+    .querySelector(".success_mail_wrapper")
+    .addEventListener("click", function (event) {
+      event.stopPropagation();
+    });
 };
 
 const navToggle = () => {
@@ -77,3 +76,12 @@ const navToggle = () => {
     mobile_menu.style.display = "none";
   }
 };
+
+window.addEventListener("scroll", (event) => {
+  let scroll = this.scrollY;
+  if (scroll > 10) {
+    document.querySelector(".nav").classList.add("shadow");
+  } else {
+    document.querySelector(".nav").classList.remove("shadow");
+  }
+});

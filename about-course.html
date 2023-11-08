@@ -281,7 +281,10 @@
     </div>
     <div class="result_studyng">
       <div class="result_studyng_wrapper main_wrapper">
-        <img src="./assets/images/result.svg" alt="" />
+        <div class="results_img">
+          <img src="./assets/images/result.svg" alt="" />
+
+        </div>
         <div class="result_tabs">
           <h2 class="block_title">Результат навчання</h2>
           <div data-ui-tablist class="accordion">
@@ -437,7 +440,7 @@
             <div data-ui-tablist-item class="structure_tab_item">
               <button data-ui-tablist-tab class="structure_tab">
                 <div>
-                  <h3>01</h3>
+                  <h3>1 модуль</h3>
                   <p>Lorem ipsum dolor sit amet consectetur?</p>
                 </div>
                 <img src="./assets/icons/arrow-dow-white.svg" alt="" />
@@ -461,7 +464,7 @@
             <div data-ui-tablist-item class="structure_tab_item">
               <button data-ui-tablist-tab class="structure_tab">
                 <div>
-                  <h3>02</h3>
+                  <h3>2 модуль</h3>
                   <p>Lorem ipsum dolor sit amet consectetur?</p>
                 </div>
                 <img src="./assets/icons/arrow-dow-white.svg" alt="" />
@@ -485,7 +488,7 @@
             <div data-ui-tablist-item class="structure_tab_item">
               <button data-ui-tablist-tab class="structure_tab">
                 <div>
-                  <h3>03</h3>
+                  <h3>3 модуль</h3>
                   <p>Lorem ipsum dolor sit amet consectetur?</p>
                 </div>
                 <img src="./assets/icons/arrow-dow-white.svg" alt="" />
@@ -509,7 +512,7 @@
             <div data-ui-tablist-item class="structure_tab_item">
               <button data-ui-tablist-tab class="structure_tab">
                 <div>
-                  <h3>04</h3>
+                  <h3>4 модуль</h3>
                   <p>Lorem ipsum dolor sit amet consectetur?</p>
                 </div>
                 <img src="./assets/icons/arrow-dow-white.svg" alt="" />
@@ -533,7 +536,7 @@
             <div data-ui-tablist-item class="structure_tab_item">
               <button data-ui-tablist-tab class="structure_tab">
                 <div>
-                  <h3>05</h3>
+                  <h3>5 модуль</h3>
                   <p>Lorem ipsum dolor sit amet consectetur?</p>
                 </div>
                 <img src="./assets/icons/arrow-dow-white.svg" alt="" />
@@ -557,7 +560,7 @@
             <div data-ui-tablist-item class="structure_tab_item">
               <button data-ui-tablist-tab class="structure_tab">
                 <div>
-                  <h3>06</h3>
+                  <h3>6 модуль</h3>
                   <p>Lorem ipsum dolor sit amet consectetur?</p>
                 </div>
                 <img src="./assets/icons/arrow-dow-white.svg" alt="" />
@@ -990,7 +993,7 @@
         </div>
       </div>
     </footer>
-    <div class="success_mail" style="display: none">
+    <div class="success_mail hided_modal" onclick="setMailModal()">
       <div class="success_mail_wrapper">
         <div class="modal_exit">
           <img
@@ -1034,7 +1037,7 @@
         </svg>
       </div>
     </div>
-    <div class="lector_modal" style="display: none">
+    <div class="lector_modal hided_modal" onclick="setLectorModal()">
       <div class="lector_modal_wrapper">
         <div class="lecor_modal_img">
           <img src="./assets/images/lector-modal.svg" alt="" />
@@ -1065,19 +1068,24 @@
     </div>
     <script>
       let navItems = document.querySelectorAll(".nav_menu a");
+      let footer = document.querySelectorAll(".footer_menu p");
       for (let i = 0; i < navItems.length; i++) {
         if (navItems[i].href == window.location.href) {
           navItems[i].className = "active_nav_menu";
         }
       }
-      const setLectorModal = () => {
+      for (let i = 0; i < footer.length; i++) {
+        if (footer[i].href == window.location.href) {
+          footer[i].className = "active_nav_menu";
+        }
+      }
+      const setLectorModal = (event) => {
         const lector_modal = document.querySelector(".lector_modal");
 
-        if (lector_modal.style.display == "none") {
-          lector_modal.style.display = "flex";
-        } else {
-          lector_modal.style.display = "none";
-        }
+        lector_modal.classList.toggle("hided_modal");
+        document.querySelector('.lector_modal_wrapper').addEventListener('click', function(event) {
+          event.stopPropagation();
+      });
       };
     </script>
     <script>

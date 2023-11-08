@@ -213,6 +213,35 @@
   right: -90px;
   top: -60px;
 }
+@media only screen and (max-width: 1260px) {
+  .lectors_carts {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: visible;
+  }
+  .lectors_carts {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: visible;
+  }
+  .lectors_carts_wrapper {
+    width: 1270px;
+    padding-left: 20px;
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .platforms_second_block  {
+    flex-direction: column;
+  }
+  .second_block_card_p {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .platform_header {
+    margin-top: 20px;
+  }
+}
 
 @media only screen and (max-width: 500px) {
   .white_pages_menu_icon {
@@ -240,6 +269,9 @@
   .platforms_second_block {
     flex-direction: column;
     gap: 22px;
+  }
+  .platform_header {
+    margin-top: 0;
   }
   .second_block_card_p {
     width: 100%;
@@ -287,11 +319,7 @@
     height: 102.867px;
     margin-bottom: 20px;
   }
-  .lectors_carts {
-    width: 100%;
-    overflow: hidden;
-    overflow-x: visible;
-  }
+
   .lector_card p {
     color: #fff;
     font-family: Montserrat;

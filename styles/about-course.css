@@ -611,10 +611,19 @@
 .course_price_card_secondary button {
   width: 300px;
 }
+.results_img {
+  display: flex;
+  align-items: center;
+  height: 510px;
+  justify-content: center;
+}
 @media only screen and (max-width: 1150px) {
   .about_course_togglers_wrapper {
     width: 100%;
     overflow-x: auto;
+  }
+  .results_img {
+    height: auto;
   }
   .about_course_togglers {
     width: 1135px;
@@ -630,6 +639,15 @@
   }
   .about_header_top {
     display: none;
+  }
+  .training_block_items {
+    margin: 0 auto;
+  }
+  .about_course_autor_img img {
+    position: static;
+  }
+  .about_course_autor_img {
+    height: auto !important;
   }
   .about_course_header_content h2 {
     font-size: 20px;
@@ -738,7 +756,7 @@
     font-size: 12px;
   }
   .structure_tab-panel p {
-    font-size: 11px;
+    font-size: 10px;
   }
   .course_price_cards {
     flex-direction: column;

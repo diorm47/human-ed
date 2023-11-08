@@ -104,7 +104,7 @@
               </defs></svg
           ></a>
           <a href="#"
-            ><svg
+><svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -669,9 +669,15 @@
     </footer>
     <script>
       let navItems = document.querySelectorAll(".nav_menu a");
+      let footer = document.querySelectorAll(".footer_menu a");
       for (let i = 0; i < navItems.length; i++) {
         if (navItems[i].href == window.location.href) {
           navItems[i].className = "active_nav_menu";
+        }
+      }
+      for (let i = 0; i < footer.length; i++) {
+        if (footer[i].href == window.location.href) {
+          footer[i].className = "active_footer_menu";
         }
       }
     </script>

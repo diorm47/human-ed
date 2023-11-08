@@ -414,7 +414,7 @@
         </div>
       </div>
     </footer>
-    <div class="lector_modal" style="display: none">
+    <div class="lector_modal hided_modal" onclick="setLectorModal()">
       <div class="lector_modal_wrapper">
         <div class="lecor_modal_img">
           <img src="./assets/images/lector-modal.svg" alt="" />
@@ -445,21 +445,28 @@
     </div>
     <script>
       let navItems = document.querySelectorAll(".nav_menu a");
+      let footer = document.querySelectorAll(".footer_menu a");
       for (let i = 0; i < navItems.length; i++) {
         if (navItems[i].href == window.location.href) {
           navItems[i].className = "active_nav_menu";
         }
       }
+      for (let i = 0; i < footer.length; i++) {
+        if (footer[i].href == window.location.href) {
+          footer[i].className = "active_footer_menu";
+        }
+      }
     </script>
     <script>
-      const setLectorModal = () => {
+      const setLectorModal = (event) => {
         const lector_modal = document.querySelector(".lector_modal");
 
-        if (lector_modal.style.display == "none") {
-          lector_modal.style.display = "flex";
-        } else {
-          lector_modal.style.display = "none";
-        }
+        lector_modal.classList.toggle("hided_modal");
+        document
+          .querySelector(".lector_modal_wrapper")
+          .addEventListener("click", function (event) {
+            event.stopPropagation();
+          });
       };
       const navToggle = () => {
         const mobile_menu = document.querySelector(".mobile_menu");
@@ -470,6 +477,15 @@
           mobile_menu.style.display = "none";
         }
       };
+      window.addEventListener("scroll", (event) => {
+        let scroll = this.scrollY;
+        if (scroll > 10) {
+          document.querySelector(".nav").classList.add("shadow");
+        } else {
+          document.querySelector(".nav").classList.remove("shadow");
+        }
+      });
+      
     </script>
   </body>
 </html>

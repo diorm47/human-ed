@@ -912,8 +912,8 @@
           <a href="#"><p>Умови надання послуг та повернення</p></a>
         </div>
       </div>
-    </footer>
-    <div class="success_mail" style="display: none">
+    </footer> 
+    <div class="success_mail hided_modal"  onclick="setMailModal()" >
       <div class="success_mail_wrapper">
         <div class="modal_exit">
           <img
@@ -959,9 +959,15 @@
     </div>
     <script>
       let navItems = document.querySelectorAll(".nav_menu a");
+      let footer = document.querySelectorAll(".footer_menu a");
       for (let i = 0; i < navItems.length; i++) {
         if (navItems[i].href == window.location.href) {
           navItems[i].className = "active_nav_menu";
+        }
+      }
+      for (let i = 0; i < footer.length; i++) {
+        if (footer[i].href == window.location.href) {
+          footer[i].className = "active_footer_menu";
         }
       }
     </script>

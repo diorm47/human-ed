@@ -458,9 +458,15 @@
     </footer>
     <script>
       let navItems = document.querySelectorAll(".nav_menu a");
+      let footer = document.querySelectorAll(".footer_menu a");
       for (let i = 0; i < navItems.length; i++) {
         if (navItems[i].href == window.location.href) {
           navItems[i].className = "active_nav_menu";
+        }
+      }
+      for (let i = 0; i < footer.length; i++) {
+        if (footer[i].href == window.location.href) {
+          footer[i].className = "active_footer_menu";
         }
       }
       const navToggle = () => {
@@ -472,6 +478,15 @@
           mobile_menu.style.display = "none";
         }
       };
+      window.addEventListener("scroll", (event) => {
+        let scroll = this.scrollY;
+        if (scroll > 10) {
+          document.querySelector(".nav").classList.add("shadow");
+        } else {
+          document.querySelector(".nav").classList.remove("shadow");
+        }
+      });
+      
     </script>
   </body>
 </html>

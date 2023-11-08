@@ -696,7 +696,7 @@ header {
   transition: all 0.4s ease;
 }
 .accordion_panel {
-  transform: translateY(-100%);
+  transform: translateY(-30%);
   opacity: 0;
   transition: all 0.4s ease;
 }
@@ -770,6 +770,33 @@ header {
 @media only screen and (max-width: 850px) {
   .advantage_card {
     width: 97%;
+  }
+  .review_card, .video_card {
+    margin: 0 auto;
+  }
+  .accordion_tab_item {
+    padding: 25px 0;
+  }
+  .accordion-tab h3 {
+    font-size: 20px;
+  }
+  .accordion-tab p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+  }
+  .accordion-tab div {
+    gap: 7px;
+  }
+  .accordion-tab img {
+    width: 22px;
+  }
+  .accordion-panel p {
+    width: 100%;
+    padding-left: 0;
+    font-size: 16px;
   }
 }
 
