@@ -264,5 +264,8 @@
     position: static;
     height: auto !important;
   }
+  .overlay {
+    height: 1500px;
+  }
 
 }

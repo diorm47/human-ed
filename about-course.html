@@ -744,7 +744,12 @@
               />
             </svg>
           </div>
-          <input type="text" placeholder="Анастасія" />
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Анастасія"
+          />
         </div>
         <div class="contact_form_item">
           <div>
@@ -764,7 +769,13 @@
               />
             </svg>
           </div>
-          <input type="text" placeholder="+38 (  )" />
+          <input
+            type="tel"
+            id="number"
+            name="number"
+            pattern="\+38 \(\d{3}\) \d{3}-\d{4}"
+            placeholder="+38 (  )"
+          />
         </div>
         <div class="contact_form_item">
           <div>
@@ -784,10 +795,19 @@
               />
             </svg>
           </div>
-          <input type="email" placeholder="anastasya_nov@gmail.com" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="anastasya_nov@gmail.com"
+          />
         </div>
         <div class="contact_form_item">
-          <textarea placeholder="Введіть текст"></textarea>
+          <textarea
+            placeholder="Введіть текст"
+            id="text_area"
+            name="text_area"
+          ></textarea>
         </div>
         <button class="submit_btn" onclick="setMailModal()">Надіслати</button>
       </div>
@@ -992,7 +1012,7 @@
         </div>
       </div>
     </footer>
-      <div class="overlay dn"></div>
+    <div class="overlay dn"></div>
     <div class="success_mail hided_modal" onclick="setMailModal()">
       <div class="success_mail_wrapper">
         <div class="modal_exit">
@@ -1037,7 +1057,7 @@
         </svg>
       </div>
     </div>
-      <div class="overlay dn"></div>
+    <div class="overlay dn"></div>
     <div class="lector_modal hided_modal" onclick="setLectorModal()">
       <div class="lector_modal_wrapper">
         <div class="lecor_modal_img">

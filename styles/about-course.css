@@ -589,8 +589,8 @@
 }
 .about_course_togglers button:hover {
   transition: all 0.4s ease;
-  background: #8AB2B5;
-  color: #FFF;
+  background: #8ab2b5;
+  color: #fff;
 }
 .course_price_card_secondary p {
   color: #8ab2b5;
@@ -679,9 +679,7 @@
     font-size: 16px;
     padding: 10px 0;
   }
-  .about_video_block {
-    height: 168px;
-  }
+
   .about_video h3 {
     font-size: 16px;
     margin-bottom: 16px;
@@ -879,7 +877,8 @@
   .course_price_card_secondary .course_price_card_title {
     width: 100%;
   }
-  .course_price_card_secondary button, .course_price_card button {
+  .course_price_card_secondary button,
+  .course_price_card button {
     width: 100%;
     font-size: 20px;
     font-style: normal;
@@ -888,7 +887,21 @@
     letter-spacing: -1.2px;
     height: 50px;
   }
-  .course_price_card_title  h3 {
+  .course_price_card_title h3 {
     font-size: 25px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .about_video_block {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .structure_tab h3 {
+    font-size: 20px;
+  }
+  .about_video_block {
+    height: 200px;
   }
 }

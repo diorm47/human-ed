@@ -82,7 +82,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: #02d5ff;
+  background: #000;
   display: none;
 }
 .top_btn img {
@@ -100,6 +100,18 @@ footer {
 .dn {
   display: none;
 }
+/* Для Webkit-браузеров, таких как Chrome, Safari и новых версий Edge */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Для Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 @media only screen and (max-width: 1280px) {
   .main_wrapper {
     width: 100%;
@@ -122,5 +134,4 @@ footer {
   .nav_menu_icon img {
     cursor: pointer;
   }
-
 }
